@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Nested_If Statements</h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h1>a is Highest</h1>
+            {% else %}
+                <h1>c is Highest</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>b is Highest</h1>
+            {% else %}
+                <marquee><h1>c is Highest</h1></marquee>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
